@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <script src="https://unpkg.com/hyperapp"></script>
+  <script>
+    const { h, app } = hyperapp
+
+    const state = {
+      title: 'Hello World'
+    }
+
+    const actions = null
+
+    const view = state => h('h1', {}, state.title)
+
+    window.main = app(
+      state,
+      actions,
+      view,
+      document.body
+    )
+  </script>
+  </body>
+</body>
+</html>
